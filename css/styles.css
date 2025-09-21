@@ -2,9 +2,7 @@
 
 body {background:#f5fffb;color:#333;font-family:'Poppins',sans-serif;line-height:1.6;margin:0;}
 h1,h2,h3,.navbar-brand,.toy-accordion .accordion-button,.card h5,.thanks-title,footer .fw-bold {
-  font-family:'Barriecito','Fredoka One','Baloo 2',sans-serif;
-}
-
+  font-family:'Barriecito','Fredoka One','Baloo 2',sans-serif;}
 .navbar {background:#06D6A0!important;box-shadow:0 2px 12px rgba(0,0,0,.15);}
 .navbar-brand {color:#FFD166!important;font-weight:800;font-size:28px;}
 .nav-link {color:#fff!important;font-weight:600;transition:.3s;}
@@ -17,12 +15,7 @@ h1,h2,h3,.navbar-brand,.toy-accordion .accordion-button,.card h5,.thanks-title,f
 .btn-outline-dark {border-color:#06D6A0;color:#333;transition:.3s;}
 .btn-outline-dark:hover {background:#ffd600!important;border-color:#ffd600!important;color:#fff!important;}
 
-.carousel-item img {
-  width: 100% !important;
-  height: auto;          
-  max-height: 90vh;
-   object-fit: cover !important;
-}
+.carousel-item img {width: 100% !important;height: auto;max-height: 90vh;object-fit: cover !important;}
 .carousel-caption {background:rgba(0,0,0,.4);border-radius:12px;padding:20px;}
 .carousel-caption h2 {color:#FFD166;font-size:2.5rem;font-weight:700;}
 .carousel-caption p {color:#fff;font-size:1.1rem;font-weight:500;}
@@ -37,12 +30,7 @@ h1,h2,h3,.navbar-brand,.toy-accordion .accordion-button,.card h5,.thanks-title,f
 .toy-accordion .accordion-body {padding:16px 24px;font-size:1rem;color:#444;}
 .toy-accordion .accordion-button:not(.collapsed){background:#cdf9ed;color:#26547C;}
 
-.parallax-banner {background:url(../images/chris-hardy-H5Ffv4I5ZMI-unsplash.jpg) center/cover fixed; min-height: 50vh;      /* flexible height */
-  max-height: 500px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
+.parallax-banner {background:url(../images/chris-hardy-H5Ffv4I5ZMI-unsplash.jpg) center/cover fixed; min-height: 50vh;max-height: 500px;display: flex;align-items: center;justify-content: center;}
 .parallax-banner h2 {text-shadow:2px 2px 5px rgba(0,0,0,.6);}
 
 .card {transition:.3s;}
@@ -50,31 +38,10 @@ h1,h2,h3,.navbar-brand,.toy-accordion .accordion-button,.card h5,.thanks-title,f
 .card.thanks-card {border-radius:18px;box-shadow:0 6px 24px rgba(0,0,0,.12);border:none;}
 .profile-img {width:85px;height:85px;margin-top:-10px;border:3px solid #fff;object-fit:cover;}
 
-.angled-img {
-  height: 300px;
-  width: 100%;
-  overflow: hidden; 
-  position: relative;
-clip-path: polygon(9% 3%, 100% 0, 100% 100%, 4% 97%);
-}
-.angled-img-left {
-  height: 300px; 
-  width: 100%;
-  overflow: hidden; 
-  position: relative;
-clip-path: polygon(0 0, 91% 3%, 96% 97%, 0% 100%);
-}
-.angled-img img, .angled-img-left img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transition: transform 0.5s ease;
-}
-.card-hover:hover .angled-img img, .card-hover:hover .angled-img-left img {
-  transform: scale(1.08); 
-}
-
-
+.angled-img {height: 300px;width: 100%;overflow: hidden; position: relative;clip-path: polygon(9% 3%, 100% 0, 100% 100%, 4% 97%);}
+.angled-img-left {height: 300px; width: 100%;overflow: hidden; position: relative;clip-path: polygon(0 0, 91% 3%, 96% 97%, 0% 100%);}
+.angled-img img, .angled-img-left img {width: 100%;height: 100%;object-fit: cover;transition: transform 0.5s ease;}
+.card-hover:hover .angled-img img, .card-hover:hover .angled-img-left img {transform: scale(1.08); }
 
 footer .links a {display:block;padding:.2rem 0;color:#fff;text-decoration:none;transition:.3s;}
 footer .links a:hover {color:#FFD166!important;transform:scale(1.05);}
@@ -83,50 +50,10 @@ footer .col.text-center {padding:1rem 0;}
 
 .thanks-card {position: relative;overflow: hidden;transition: transform 0.25s cubic-bezier(.25,.8,.25,1);}
 .thanks-card:hover {transform: scale(0.97);}
+.thanks-card-bg {position: absolute;inset: 0;width: 100%;height: 100%;background-size: cover;background-position: center;filter: blur(1px) brightness(0.9);opacity: 0.4;z-index: 1;}
 
-/* Card background setup */
-.thanks-card-bg {position: absolute;inset: 0;width: 100%;height: 100%;background-size: cover;
-  background-position: center;filter: blur(1px) brightness(0.9);opacity: 0.4;z-index: 1;}
-
-.popular {
-  position: relative;
-  overflow: hidden;
-  border-radius: 10px;
-}
-.popular::before {
-  content: " ";
-  position: absolute;
-  width: 0;
-  height: 0;
-  background: #4ae3b599; 
-  bottom: 0;
-  left: 0;
-  border-radius: 10px;
-  opacity: 0.3;
-  transition: all 0.5s ease;
-  pointer-events: none;
-  z-index: 1;
-  transform-origin: bottom left;
-}
-
-.popular::after {
-  content: " ";
-  position: absolute;
-  width: 0;
-  height: 0;
-  background: #f07cac99; 
-  top: 0;
-  right: 0;
-  border-radius: 10px;
-  opacity: 0.4;
-  transition: all 0.5s ease;
-  pointer-events: none;
-  z-index: 1;
-  transform-origin: top right;
-}
+.popular {position: relative;overflow: hidden;border-radius: 10px;}
+.popular::before {content: " ";position: absolute;width: 0;height: 0;background: #4ae3b599; bottom: 0;left: 0;border-radius: 10px;opacity: 0.3;transition: all 0.5s ease;pointer-events: none;z-index: 1;transform-origin: bottom left;}
+.popular::after {content: " ";position: absolute;width: 0;height: 0;background: #f07cac99; top: 0;right: 0;border-radius: 10px;opacity: 0.4;transition: all 0.5s ease;pointer-events: none;z-index: 1;transform-origin: top right;}
 .popular:hover::before,
-.popular:hover::after {
-  width: 100%;
-  height: 100%;
-  opacity: 0.3;
-}
+.popular:hover::after {width: 100%;height: 100%;opacity: 0.3;}
