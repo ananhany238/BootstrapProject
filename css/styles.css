@@ -11,7 +11,7 @@ h1,h2,h3,.navbar-brand,.toy-accordion .accordion-button,.card h5,.thanks-title,f
 .btn-search:hover {background:#ffb703;color:#fff;}
 .btn-login { color:white; background: #ffd600 !important;border-radius: 25px;font-weight: 500;transition: background .25s, transform .25s;}
 .btn-login:hover {background: #700470 !important;color: #fff !important;transform: translateY(-2px);}
-.btn-modal:hover {background:#FFD166;color:#333;}
+.btn-modal:hover {background:#f1f1a2e0;color:#333;}
 .btn-outline-dark {border-color:#06D6A0;color:#333;transition:.3s;}
 .btn-outline-dark:hover {background:#ffd600!important;border-color:#ffd600!important;color:#fff!important;}
 
